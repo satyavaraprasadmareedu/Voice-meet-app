@@ -12,8 +12,7 @@ import RtcEngine, {
 
 const audioRecorderPlayer = new AudioRecorderPlayer();
 const AGORA_APP_ID = 'YOUR_AGORA_APP_ID';
-
-export default function MeetingScreen() {
+function MeetingScreen() {
   const { user, host, roomId } = useLocalSearchParams();
   const isHost = host === 'true';
   const [isMuted, setIsMuted] = useState(false);
@@ -85,3 +84,4 @@ const styles = StyleSheet.create({
   container: { flex: 1, padding: 20 },
   title: { fontSize: 20, marginBottom: 10 },
 });
+export default MeetingScreen;
