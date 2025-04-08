@@ -11,7 +11,7 @@ import RtcEngine, {
   
 
 const audioRecorderPlayer = new AudioRecorderPlayer();
-const AGORA_APP_ID = 'YOUR_AGORA_APP_ID';
+const AGORA_APP_ID = '20c7974e4d6f41078c9fcc2e3aaf450e';
 function MeetingScreen() {
   const { user, host, roomId } = useLocalSearchParams();
   const isHost = host === 'true';
